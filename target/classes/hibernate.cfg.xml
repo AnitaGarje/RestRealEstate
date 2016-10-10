@@ -8,8 +8,8 @@
     <property name="show_sql">true</property>  
     
      <!-- Create DB tables -->
-    <!--  <property name="hibernate.hbm2ddl.auto">create</property>-->
+    <property name="hibernate.hbm2ddl.auto">update</property>
     
-    <mapping resource="net/codejava/spring/model/Project.hbm.xml"/>
+    	<mapping resource="net/codejava/spring/model/Project.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

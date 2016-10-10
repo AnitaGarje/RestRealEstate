@@ -24,12 +24,14 @@ public class ProjectServiceImpl implements ProjectService{
 	 @Autowired
 	 private ProjectDAO projectDao;
 
+	 @Override
 	 public List<Project> list() {
 		  return projectDao.list();
 		 }
 	 
 	 
 	// @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
+	 @Override
 	 public void addProject(Project project) {
 		 projectDao.addProject(project);
 	 }

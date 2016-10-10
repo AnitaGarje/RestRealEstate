@@ -44,9 +44,10 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
-	<bean id="userDao" class="net.codejava.spring.dao.ProjectDAOImpl">
+	<bean id="projectDao" class="net.codejava.spring.dao.ProjectDAOImpl">
 	    <constructor-arg>
 	        <ref bean="sessionFactory" />
 	    </constructor-arg>
-	</bean>    	
+	</bean> 
+	  	
 </beans>

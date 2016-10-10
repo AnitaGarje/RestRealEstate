@@ -12,6 +12,7 @@
 		<java-version>1.8</java-version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<org.springframework-version>4.0.3.RELEASE</org.springframework-version>
+		 <jackson.version>2.7.5</jackson.version>
 	</properties>
 	
 	<dependencies>
@@ -100,7 +101,17 @@
     		<artifactId>mysql-connector-java</artifactId>
     		<version>5.1.30</version>		
 		</dependency> 
+		
+			<!-- For RESTful API -->
+		<dependency>  
+           <groupId>com.fasterxml.jackson.core</groupId>  
+           <artifactId>jackson-databind</artifactId>  
+            <version>2.4.1</version>  
+		</dependency> 
 	</dependencies>
+	
+ 
+
     <build>
         <plugins>
             <plugin>
@@ -137,6 +148,7 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+            
         </plugins>
     </build>
 </project>

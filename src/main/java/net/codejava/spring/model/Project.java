@@ -7,14 +7,14 @@ public class Project implements  java.io.Serializable {/// why  serializable?
 	private int id;
 	private String code;
 	private String description;
-	//private Set<Sector> sectors = new HashSet<Sector>(0); //? why  n why set--->one to many but didbn't understand the reason.
+	//private Set<Sector> sectors;//= new HashSet<Sector>(0); //? why  n why set--->one to many but didbn't understand the reason.
 	public Project()
 	{
 		
 	}
-	public Project(int id, String code, String description) {
+	public Project(int id, String code, String description/*, Set<Sector> sectors*/) {
 		//super();
-		this.id = id;
+		this.id=id;
 		this.code = code;
 		this.description = description;
 		//this.sectors = sectors;
@@ -26,12 +26,7 @@ public class Project implements  java.io.Serializable {/// why  serializable?
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	public String getCode() {
 		return code;
 	}
@@ -44,5 +39,15 @@ public class Project implements  java.io.Serializable {/// why  serializable?
 	public void setSectors(Set<Sector> sectors) {
 		this.sectors = sectors;
 	}*/
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+
+
+	
 
 }

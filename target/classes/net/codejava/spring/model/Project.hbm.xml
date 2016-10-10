@@ -4,7 +4,7 @@
 <hibernate-mapping>
 		<class name="net.codejava.spring.model.Project" table="Project" catalog="AmanoraDurgaDb1">
 			<id name="id" type="java.lang.Integer">
-			<column name="id"/>
+			<column name="pid"/>
 			<generator class="identity"/> <!--  // when to use <generator class="identity"></generator> and <generator class="identity"/> -->
 			</id>
 			<property name="code" type="string"> 
