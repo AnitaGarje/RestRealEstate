@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.codejava</groupId>
-	<artifactId>REALESTATE</artifactId>
-	<name>REALESTATE</name>
+	<artifactId>RESTREALESTATE</artifactId>
+	<name>RESTREALESTATE</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	
@@ -149,6 +149,18 @@
                 </configuration>
             </plugin>
             
+            	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
+					<warName>RESTREALESTATE</warName>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+            
         </plugins>
+        <finalName>RESTREALESTATE</finalName>
     </build>
 </project>
